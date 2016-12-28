@@ -1,0 +1,31 @@
+#packing program
+print ("    Welcome to the packing program\n")
+list = ['computer', 'phone', 'chair']
+print ("Your suitcase contains:")
+for x in range (0,3):
+    print (list[x])
+
+
+#.count returns the number of times an obj occurs in a list
+print (list.count('phone'))
+
+print("enter the number of items you want to enter into the list")
+v = int(input())
+b = 3
+for x in range(0,v):
+    print ("enter an object into the suitcase")
+    thing = input() #without the mod it will take it in as a string
+    list.insert(b,thing)
+    b = b + 1
+    
+#prints out the new list 
+for x in range (0,b):
+    print (list[x])
+
+
+#testing
+
+number = int(input())
+number = number + 1
+
+print(number)
